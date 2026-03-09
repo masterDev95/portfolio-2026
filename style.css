@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=VT323&display=swap');
+
+:root {
+  /* COLORS */
+  --bg-color: #1A1A1B;
+  --primary-color: #640D5F;
+  --text-color: #f9edff;
+
+  /* FONTS */
+  --text-font: 'Inter';
+  --special-font: 'VT323';
+
+  --nav-font-size: 36px;
+
+  /* HERO */
+  --hero-greeting-font-size: 56px;
+  --hero-title-font-size: 90px;
+  --hero-intro-font-size: 24px;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--text-font);
+}
+
+#nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  font-family: var(--special-font);
+  font-size: var(--nav-font-size);
+}
+
+#nav-list > li {
+  padding: 0 .5em;
+}
+
+main {
+  margin-top: 5em;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hero-image > img {
+  border-radius: 50%;
+}
+
+.hero-greeting {
+  font-size: var(--hero-greeting-font-size);
+  font-weight: bold;
+  margin: 0;
+}
+
+.hero-title {
+  padding-left: 1em;
+  font-family: var(--special-font);
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: var(--hero-title-font-size);
+}
+
+.hero-intro {
+  font-size: var(--hero-intro-font-size);
+}
