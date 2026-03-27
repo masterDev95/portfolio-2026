@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=VT323&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=VT323&display=swap");
 
 :root {
   /* COLORS */
-  --bg-color: #1A1A1B;
-  --primary-color: #640D5F;
+  --bg-color: #1a1a1b;
+  --primary-color: #500073;
   --text-color: #f9edff;
 
   /* FONTS */
-  --text-font: 'Inter';
-  --special-font: 'VT323';
+  --text-font: "Inter";
+  --special-font: "VT323";
 
   --nav-font-size: 36px;
 
@@ -33,7 +33,7 @@ body {
 }
 
 #nav-list > li {
-  padding: 0 .5em;
+  padding: 0 0.5em;
 }
 
 main {
@@ -66,4 +66,8 @@ main {
 
 .hero-intro {
   font-size: var(--hero-intro-font-size);
+}
+
+.social-links > a {
+  text-decoration: none;
 }
