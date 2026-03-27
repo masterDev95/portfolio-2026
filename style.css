@@ -37,7 +37,15 @@ body {
 }
 
 main {
-  margin: 5em 3em 0 3em;
+  margin: 0 3em;
+}
+
+section {
+  margin-top: 5em;
+}
+
+h1 {
+  font-size: var(--hero-greeting-font-size);
 }
 
 .hero {
@@ -47,12 +55,6 @@ main {
 
 .hero-image > img {
   border-radius: 50%;
-}
-
-.hero-greeting {
-  font-size: var(--hero-greeting-font-size);
-  font-weight: bold;
-  margin: 0;
 }
 
 .hero-title {
