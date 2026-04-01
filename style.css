@@ -16,6 +16,16 @@
 
   /* HERO */
   --hero-title-font-size: 90px;
+
+  /* RHOMBUSES */
+  --rhombus-size: 150px;
+  --rhombus-opacity: 0.3;
+
+  --rhombus-left-margin: 0 0 0 -64px;
+  --rhombus-left-angle: -26.73deg;
+
+  --rhombus-right-margin: -48px 64px 0 0;
+  --rhombus-right-angle: 38.02deg;
 }
 
 body {
@@ -72,4 +82,48 @@ p {
 
 .social-links > a {
   text-decoration: none;
+}
+
+.lorem-about-placeholder {
+  margin-left: 3em;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 250px;
+}
+
+.lorem-paragraph,
+.rhombus-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.rhombus-container {
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.rhombus__left {
+  margin: var(--rhombus-left-margin);
+  rotate: var(--rhombus-left-angle);
+  align-self: end;
+}
+
+.rhombus__right {
+  margin: var(--rhombus-right-margin);
+  rotate: var(--rhombus-right-angle);
+}
+
+.rhombus__left,
+.rhombus__right {
+  width: var(--rhombus-size);
+  height: var(--rhombus-size);
+  background: url(images/3DRhombus.png) left;
+  background-size: var(--rhombus-size);
+  opacity: var(--rhombus-opacity);
 }
