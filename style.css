@@ -50,16 +50,21 @@ main {
   margin: 0 3em;
 }
 
-section {
-  margin-top: 5em;
+main > article {
+  margin-top: 7em;
 }
 
-h1 {
+h2 {
   font-size: var(--section-title-font-size);
 }
 
 p {
   font-size: var(--normal-text-font-size);
+}
+
+#greetings {
+  display: flex;
+  justify-content: space-between;
 }
 
 .hero {
