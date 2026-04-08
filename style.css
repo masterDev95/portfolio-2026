@@ -58,18 +58,14 @@ h2 {
   font-size: var(--section-title-font-size);
 }
 
-p {
+section > p {
   font-size: var(--normal-text-font-size);
-}
-
-#greetings {
-  display: flex;
-  justify-content: space-between;
+  margin-left: 2.5em;
 }
 
 .hero {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .hero-image > img {
@@ -78,6 +74,7 @@ p {
 
 .hero-title {
   padding-left: 1em;
+  margin: 0.5em 0;
   font-family: var(--special-font);
   color: var(--primary-color);
   text-transform: uppercase;
@@ -85,12 +82,15 @@ p {
   font-size: var(--hero-title-font-size);
 }
 
+.social-links {
+  margin-top: 0.6em;
+}
+
 .social-links > a {
   text-decoration: none;
 }
 
 .lorem-about-placeholder {
-  margin-left: 3em;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -125,4 +125,38 @@ p {
   background: url(images/3DRhombus.png) left;
   background-size: var(--rhombus-size);
   opacity: var(--rhombus-opacity);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  :root {
+    --section-title-font-size: 32px;
+    --hero-title-font-size: 52px;
+    --normal-text-font-size: 20px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  main {
+    margin: 0 2em;
+  }
+
+  section > p {
+    margin-left: 1em;
+  }
+
+  .hero {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  .hero-title {
+    padding-left: 0;
+  }
+
+  .lorem-about-placeholder {
+    margin-left: 0;
+  }
 }
