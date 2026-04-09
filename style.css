@@ -32,9 +32,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: var(--text-font);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 0;
 }
 
 #nav-list {
@@ -48,11 +46,15 @@ body {
 
 main {
   margin: 0 3em;
-  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main > article {
   margin-top: 7em;
+  max-width: 1500px;
+  width: 100%;
 }
 
 h2 {
