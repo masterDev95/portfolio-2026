@@ -26,6 +26,26 @@
 
   --rhombus-right-margin: -48px 64px 0 0;
   --rhombus-right-angle: 38.02deg;
+
+  /* CARD */
+  --cards-color: #2e2e2e;
+
+  --cards-gap: 42px;
+
+  --cards-width: 400px;
+  --cards-height: 234px;
+
+  --cards-padding-top: 18px;
+  --cards-padding-right: 30px;
+  --cards-padding-bottom: 24px;
+  --cards-padding-left: 30px;
+
+  --cards-title-font-size: 36px;
+
+  /* SKILLS ICONS */
+  --skills-icons-gap: 33px;
+  --skills-icons-row-gap: 14px;
+  --skills-icons-size: 58px;
 }
 
 body {
@@ -132,22 +152,27 @@ section > p {
 
 .skills-cards {
   display: grid;
-  gap: 42px;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: var(--cards-gap);
+  grid-template-columns: repeat(auto-fit, minmax(var(--cards-width), 1fr));
   justify-items: center;
 }
 
 .card {
   border: 1px solid;
   border-radius: 25px;
-  padding: 18px 30px 24px 30px;
-  width: calc(400px - 30px * 2);
-  height: calc(234px - 18px - 24px);
+  padding-top: var(--cards-padding-top);
+  padding-right: var(--cards-padding-right);
+  padding-bottom: var(--cards-padding-bottom);
+  padding-left: var(--cards-padding-left);
+  width: calc(var(--cards-width) - var(--cards-padding-left) * 2);
+  height: calc(
+    var(--cards-height) - var(--cards-padding-top) - var(--cards-padding-bottom)
+  );
 }
 
 .card h2 {
   font-family: var(--special-font);
-  font-size: 36px;
+  font-size: var(--cards-title-font-size);
   font-weight: normal;
   margin: 0;
   margin-bottom: 30px;
@@ -156,13 +181,13 @@ section > p {
 .skills-icons {
   display: flex;
   flex-wrap: wrap;
-  gap: 33px;
-  row-gap: 14px;
+  gap: var(--skills-icons-gap);
+  row-gap: var(--skills-icons-row-gap);
 }
 
 .skills-icons img {
-  width: 58px;
-  height: 58px;
+  width: var(--skills-icons-size);
+  height: var(--skills-icons-size);
 }
 
 /* MOBILE */
@@ -171,6 +196,24 @@ section > p {
     --section-title-font-size: 32px;
     --hero-title-font-size: 52px;
     --normal-text-font-size: 20px;
+
+    /* CARD */
+    --cards-gap: 28px;
+
+    --cards-width: 326px;
+    --cards-height: 209px;
+
+    --cards-padding-top: 16px;
+    --cards-padding-right: 27px;
+    --cards-padding-bottom: 30px;
+    --cards-padding-left: 27px;
+
+    --cards-title-font-size: 32px;
+
+    /* SKILLS ICONS */
+    --skills-icons-gap: 30px;
+    --skills-icons-row-gap: 22px;
+    --skills-icons-size: 43px;
   }
 
   nav {
@@ -197,37 +240,10 @@ section > p {
   .lorem-about-placeholder {
     margin-left: 0;
   }
-
-  .skills-cards {
-    gap: 28px;
-    grid-template-columns: repeat(auto-fit, minmax(326px, 1fr));
-  }
-
-  .card {
-    padding: 16px 27px 30px 27px;
-    width: 100%;
-    max-width: calc(326px - 27px * 2);
-    height: calc(209px - 16px - 30px);
-  }
-
-  .card h2 {
-    font-size: 32px;
-  }
-
-  .skills-icons {
-    gap: 30px;
-    row-gap: 22px;
-  }
-
-  .skills-icons img {
-    width: 43px;
-    height: 43px;
-  }
 }
 
 @media (max-width: 375px) {
-  .skills-icons img {
-    width: 35px;
-    height: 35px;
+  :root {
+    --skills-icons-size: 35px;
   }
 }
