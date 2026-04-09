@@ -197,4 +197,37 @@ section > p {
   .lorem-about-placeholder {
     margin-left: 0;
   }
+
+  .skills-cards {
+    gap: 28px;
+    grid-template-columns: repeat(auto-fit, minmax(326px, 1fr));
+  }
+
+  .card {
+    padding: 16px 27px 30px 27px;
+    width: 100%;
+    max-width: calc(326px - 27px * 2);
+    height: calc(209px - 16px - 30px);
+  }
+
+  .card h2 {
+    font-size: 32px;
+  }
+
+  .skills-icons {
+    gap: 30px;
+    row-gap: 22px;
+  }
+
+  .skills-icons img {
+    width: 43px;
+    height: 43px;
+  }
+}
+
+@media (max-width: 375px) {
+  .skills-icons img {
+    width: 35px;
+    height: 35px;
+  }
 }
