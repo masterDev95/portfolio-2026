@@ -32,22 +32,23 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: var(--text-font);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #nav-list {
   list-style: none;
   display: flex;
+  gap: 42px;
   justify-content: center;
   font-family: var(--special-font);
   font-size: var(--nav-font-size);
 }
 
-#nav-list > li {
-  padding: 0 0.5em;
-}
-
 main {
   margin: 0 3em;
+  max-width: 1500px;
 }
 
 main > article {
