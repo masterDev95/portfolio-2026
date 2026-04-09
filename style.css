@@ -130,6 +130,41 @@ section > p {
   opacity: var(--rhombus-opacity);
 }
 
+.skills-cards {
+  display: grid;
+  gap: 42px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: center;
+}
+
+.card {
+  border: 1px solid;
+  border-radius: 25px;
+  padding: 18px 30px 24px 30px;
+  width: calc(400px - 30px * 2);
+  height: calc(234px - 18px - 24px);
+}
+
+.card h2 {
+  font-family: var(--special-font);
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.skills-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 33px;
+  row-gap: 14px;
+}
+
+.skills-icons img {
+  width: 58px;
+  height: 58px;
+}
+
 /* MOBILE */
 @media (max-width: 768px) {
   :root {
