@@ -84,6 +84,7 @@ h2 {
 section > p {
   font-size: var(--normal-text-font-size);
   margin-left: 2.5em;
+  text-align: justify;
 }
 
 .hero {
@@ -225,7 +226,7 @@ section > p {
   }
 
   section > p {
-    margin-left: 1em;
+    margin-left: 0;
   }
 
   .hero {
