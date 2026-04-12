@@ -245,5 +245,6 @@ section > p {
 @media (max-width: 375px) {
   :root {
     --skills-icons-size: 35px;
+    --cards-width: 290px;
   }
 }
