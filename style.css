@@ -30,17 +30,17 @@
   /* CARD */
   --cards-color: #2e2e2e;
 
-  --cards-gap: 42px;
+  --small-cards-gap: 42px;
 
-  --cards-width: 400px;
-  --cards-height: 234px;
+  --small-cards-width: 400px;
+  --small-cards-height: 234px;
 
-  --cards-padding-top: 18px;
-  --cards-padding-right: 30px;
-  --cards-padding-bottom: 24px;
-  --cards-padding-left: 30px;
+  --small-cards-padding-top: 18px;
+  --small-cards-padding-right: 30px;
+  --small-cards-padding-bottom: 24px;
+  --small-cards-padding-left: 30px;
 
-  --cards-title-font-size: 36px;
+  --small-cards-title-font-size: 36px;
 
   /* SKILLS ICONS */
   --skills-icons-gap: 33px;
@@ -153,27 +153,27 @@ section > p {
 
 .skills-cards {
   display: grid;
-  gap: var(--cards-gap);
-  grid-template-columns: repeat(auto-fit, minmax(var(--cards-width), 1fr));
+  gap: var(--small-cards-gap);
+  grid-template-columns: repeat(auto-fit, minmax(var(--small-cards-width), 1fr));
   justify-items: center;
 }
 
-.card {
+.small-card {
   border: 1px solid;
   border-radius: 25px;
-  padding-top: var(--cards-padding-top);
-  padding-right: var(--cards-padding-right);
-  padding-bottom: var(--cards-padding-bottom);
-  padding-left: var(--cards-padding-left);
-  width: calc(var(--cards-width) - var(--cards-padding-left) * 2);
+  padding-top: var(--small-cards-padding-top);
+  padding-right: var(--small-cards-padding-right);
+  padding-bottom: var(--small-cards-padding-bottom);
+  padding-left: var(--small-cards-padding-left);
+  width: calc(var(--small-cards-width) - var(--small-cards-padding-left) * 2);
   height: calc(
-    var(--cards-height) - var(--cards-padding-top) - var(--cards-padding-bottom)
+    var(--small-cards-height) - var(--small-cards-padding-top) - var(--small-cards-padding-bottom)
   );
 }
 
-.card h2 {
+.small-card h2 {
   font-family: var(--special-font);
-  font-size: var(--cards-title-font-size);
+  font-size: var(--small-cards-title-font-size);
   font-weight: normal;
   margin: 0;
   margin-bottom: 30px;
@@ -199,17 +199,17 @@ section > p {
     --normal-text-font-size: 20px;
 
     /* CARD */
-    --cards-gap: 28px;
+    --small-cards-gap: 28px;
 
-    --cards-width: 326px;
-    --cards-height: 209px;
+    --small-cards-width: 326px;
+    --small-cards-height: 209px;
 
-    --cards-padding-top: 16px;
-    --cards-padding-right: 27px;
-    --cards-padding-bottom: 30px;
-    --cards-padding-left: 27px;
+    --small-cards-padding-top: 16px;
+    --small-cards-padding-right: 27px;
+    --small-cards-padding-bottom: 30px;
+    --small-cards-padding-left: 27px;
 
-    --cards-title-font-size: 32px;
+    --small-cards-title-font-size: 32px;
 
     /* SKILLS ICONS */
     --skills-icons-gap: 30px;
@@ -246,6 +246,6 @@ section > p {
 @media (max-width: 375px) {
   :root {
     --skills-icons-size: 35px;
-    --cards-width: 290px;
+    --small-cards-width: 290px;
   }
 }
