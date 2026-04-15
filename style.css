@@ -190,8 +190,15 @@ section > p {
   justify-items: center;
 }
 
+.small-card,
+.big-card {
+  background: #2e2e2e33;
+  border-radius: 25px;
+  backdrop-filter: blur(4px);
+  border: 2px solid #dddddd33;
+}
+
 .small-card {
-  border: 1px solid;
   border-radius: 25px;
   padding-top: var(--small-cards-padding-top);
   padding-right: var(--small-cards-padding-right);
