@@ -327,10 +327,35 @@ section > p {
 
     --small-cards-title-font-size: 32px;
 
+    --projects-cards-gap: 23px;
+
+    --big-cards-width: 259px;
+    --big-cards-height: 345px;
+
+    --big-cards-figure-height: 129px;
+
+    --big-cards-content-padding: 0 16px;
+
+    --big-cards-title-font-size: 26px;
+    --big-cards-title-height: 61px;
+
+    --big-cards-text-font-size: 15px;
+
     /* SKILLS ICONS */
     --skills-icons-gap: 30px;
     --skills-icons-row-gap: 22px;
     --skills-icons-size: 43px;
+
+    /* SKILL BADGES */
+    --skill-badges-gap: 9px;
+    --skill-badge-width: 66px;
+    --skill-badge-height: 24px;
+    --skill-badge-font-size: 16px;
+
+    /* KNOW MORE BUTTON */
+    --know-more-button-width: 129px;
+    --know-more-button-height: 23px;
+    --know-more-button-font-size: 15px;
   }
 
   nav {
