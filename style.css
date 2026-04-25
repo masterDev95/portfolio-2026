@@ -128,7 +128,7 @@ main {
   align-items: center;
 }
 
-main > article {
+main > section {
   margin-top: 7em;
   max-width: 1500px;
   width: 100%;
