@@ -90,6 +90,11 @@ body {
   font-size: var(--nav-font-size);
 }
 
+#nav-list a {
+  text-decoration: none;
+  color: inherit;
+}
+
 #nav-list li {
   position: relative;
 }
