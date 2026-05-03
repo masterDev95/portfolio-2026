@@ -140,9 +140,8 @@ h2 {
   font-size: var(--section-title-font-size);
 }
 
-section > p {
+p {
   font-size: var(--normal-text-font-size);
-  margin-left: 2.5em;
   text-align: justify;
 }
 
@@ -270,6 +269,11 @@ section > p {
   flex-wrap: wrap;
   gap: var(--projects-cards-gap);
   row-gap: var(--projects-cards-row-gap);
+}
+
+#projects-cards::after {
+  content: "";
+  display: none;
 }
 
 .big-card {
@@ -413,6 +417,18 @@ section > p {
 
   .lorem-about-placeholder {
     margin-left: 0;
+  }
+
+  #projects-cards {
+    display: inherit;
+  }
+
+  #projects-cards::after {
+    content: "flickity";
+  }
+
+  .big-card {
+    margin-right: var(--projects-cards-gap);
   }
 }
 
