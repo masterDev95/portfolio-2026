@@ -148,6 +148,8 @@ h2 {
 p {
   font-size: var(--normal-text-font-size);
   text-align: justify;
+  text-wrap: pretty;
+  hyphens: auto;
 }
 
 .hero {
