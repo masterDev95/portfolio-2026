@@ -180,18 +180,18 @@ p {
   text-decoration: none;
 }
 
-.lorem-about-placeholder {
+.about-container {
   display: flex;
   align-items: center;
 }
 
-.lorem-content {
+.about-content {
   margin: auto;
   width: min(100%, 1150px);
   position: relative;
 }
 
-.lorem-content > p {
+.about-content > p {
   max-width: 1500px;
   margin: auto;
 }
