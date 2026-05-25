@@ -5,6 +5,7 @@
   --bg-color: #1a1a1b;
   --primary-color: #500073;
   --text-color: #f9edff;
+  --link-color: #e8b1ff;
 
   /* FONTS */
   --text-font: "Inter";
@@ -81,6 +82,12 @@ body {
   margin: 0;
 }
 
+a,
+a:visited {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
 #nav-list {
   list-style: none;
   display: flex;
@@ -91,7 +98,6 @@ body {
 }
 
 #nav-list a {
-  text-decoration: none;
   color: inherit;
 }
 
@@ -147,8 +153,6 @@ h2 {
 
 p {
   font-size: var(--normal-text-font-size);
-  text-align: justify;
-  text-wrap: pretty;
   hyphens: auto;
 }
 
@@ -295,6 +299,12 @@ p {
   width: 100%;
   height: var(--big-cards-figure-height);
   background-color: var(--primary-color);
+}
+
+.big-card figure img {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 100%;
 }
 
 .big-card-content {
