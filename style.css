@@ -206,7 +206,7 @@ p {
   position: absolute;
   width: var(--rhombus-size);
   height: var(--rhombus-size);
-  background: url(images/3DRhombus.png);
+  background: url(images/3DRhombus.webp);
   background-size: var(--rhombus-size);
 }
 
