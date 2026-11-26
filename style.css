@@ -440,8 +440,11 @@ p {
     --know-more-button-font-size: 15px;
   }
 
-  nav {
-    display: none;
+  #nav-list {
+    flex-wrap: wrap;
+    gap: 12px 24px;
+    padding: 0 1rem;
+    font-size: 30px;
   }
 
   main {
