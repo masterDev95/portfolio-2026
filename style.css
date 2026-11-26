@@ -108,6 +108,12 @@ a:visited {
   text-decoration: none;
 }
 
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--link-color);
+  outline-offset: 4px;
+}
+
 #nav-list {
   list-style: none;
   display: flex;
