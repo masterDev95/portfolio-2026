@@ -333,7 +333,10 @@ p {
   gap: var(--skill-badges-gap);
 }
 
-.skill-badges button {
+.skill-badges span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: var(--skill-badge-width);
   height: var(--skill-badge-height);
   border: var(--skill-badge-border);
